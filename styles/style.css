@@ -458,18 +458,18 @@ h1,h2,h4, p {
     gap: 10px;
   }
 
-  .hero_content--title {
+  /* .hero_content--title {
     font-size: 1em;
     line-height: 1;
   }
 
   .hero_content--subtitle {
     font-size: 0.5em;
-  }
+  } */
 
   .hero_button {
-    width: 80px;
-    font-size: 0.3em;
+    /* width: 80px; */
+    /* font-size: 0.3em; */
     padding: 5px;
   }
 
