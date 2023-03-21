@@ -44,7 +44,10 @@ h1,h2,h4, p {
     padding: 0 15%;
   }
 
-  
+  .spacing_blocks {
+    margin-top: 150px;
+  }
+
   .section_title {
     font-size: 3.5em;
     text-align: center;
@@ -123,6 +126,10 @@ h1,h2,h4, p {
     transition: var(--hover);
   }
 
+  .header_nav--toggle {
+    display: none;
+  }
+
   /* HERO */
   .hero {
     position: relative;
@@ -130,17 +137,16 @@ h1,h2,h4, p {
     overflow: hidden;
   }
 
-.hero::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  bottom: 25%;
-  background: linear-gradient(104deg, rgba(0,228,254,1), rgba(0,139,246,1));
-  transform: skewY(-3.6deg);
-  
-}
+  .hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 25%;
+    background: linear-gradient(104deg, rgba(0,228,254,1), rgba(0,139,246,1));
+    transform: skewY(-3.6deg);
+  }
 
   .hero_wrapper {
     padding-top: 50px;
@@ -188,10 +194,6 @@ h1,h2,h4, p {
   }
 
   /* ingredients */
-  #ingredients {
-    margin-top: 150px;
-  }
-
   .ingredients_wrapper {
     display: flex;
     flex-direction: column;
@@ -212,7 +214,6 @@ h1,h2,h4, p {
     margin-bottom: 50px;
     display: flex;
     gap: 50px;
-    /* transition: transform 1s ease-in-out; */
   }
 
   .ingredients_list--item {
@@ -233,32 +234,7 @@ h1,h2,h4, p {
     text-align: center;
   } 
 
-  /* .ingredients_list {
-    animation-name: slide;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-  .slide:hover {
-    animation-play-state: paused;
-  }
-  
-  @keyframes slide {
-    0% {
-      transform: translate(0%, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
-  } */
-
 /* STORY */
-  #story {
-    margin-top: 150px;
-  }
-
   .story_wrapper {
     display: flex;
     align-items: center;
@@ -275,10 +251,6 @@ h1,h2,h4, p {
 
 
 /* Burgers */
-  #burgers {
-    margin-top: 150px;
-  }
-
   .burgers_wrapper {
     display: flex;
     flex-direction: column;
@@ -333,10 +305,6 @@ h1,h2,h4, p {
 
 
   /* Location */
-  #location {
-    margin-top: 150px;
-  }
-
   .location_wrapper {
     display: flex;
     flex-direction: column;
@@ -361,7 +329,6 @@ h1,h2,h4, p {
 
    /* Footer */
    .footer {
-    margin-top: 150px;
     background: #F5F5F5;
     margin-bottom: 30px;
   }
@@ -394,10 +361,31 @@ h1,h2,h4, p {
   .container {
     padding: 0 10%;
   }
+
+  .header_wrapper {
+    padding: 15px 0;
+  }
 }
 
 /* Tablet HD */
 @media screen and (max-width: 1439px) {
+  .logo {
+    width: 130px;
+    height: 40px;
+  }
+
+  .spacing_blocks {
+    margin-top: 75px;
+  }
+
+  .header_actions {
+    gap: 50px;
+  } 
+
+  .header_nav {
+    gap: 30px;
+}
+
   .hero_wrapper {
     padding-top: 20px;
   }
@@ -415,10 +403,64 @@ h1,h2,h4, p {
     flex-direction: column;
     text-align: center;
   }
+
+  .text-left {
+    text-align: center;
+  }
 }
 
 /* Tablet SD */
 @media screen and (max-width: 1023px) {
+  nav {
+    display: none;
+  }
+
+  .header_nav--toggle {
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   
+
+  .header_nav--toggle:hover {
+    box-shadow: var(--complementary-color) 4px 2px 5px;
+    transition: all .3s ease-in-out;
+  }
+ 
+
+  nav.show {
+    display: block;
+    position: absolute;
+  }
+
+.header_nav {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  height: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.header_buttons {
+  display: flex;
+  gap: 100px;
+}
+
+.nav_icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
   .hero_content--title {
     font-size: 2.5em;
     line-height: 1;
@@ -436,16 +478,25 @@ h1,h2,h4, p {
     padding: 10px 5px;
   }
 
-    .location_list--item {
+  .ingredients {
+    padding: 0;
+  }
+  
+  .location_list--item {
     font-size: 1em;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+
+  .display_none {
+    display: none;
+  }
+
 .hero_wrapper {
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
 }
 
   .hero_content--title {

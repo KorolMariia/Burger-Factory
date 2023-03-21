@@ -12,32 +12,6 @@ const updateButton = (button) => {
   button.value = button.value === 'Detalis' ? 'Reduce' : 'Detalis';
 };
 
-// const toggleIngredients = (parent) => {
-//   const ingredients = parent.querySelector('.burgers_ingredients');
-//   const title = parent.querySelector('.burgers_ingredients--title');
-//   if (ingredients && title) {
-//     title.remove();
-//     ingredients.remove();
-//   } else {
-//     const title = createTitle();
-//     const compound = createCompound();
-//     parent.append(title, compound);
-//   }
-// };
-
-// const toggleIngredients = (parent) => {
-//   const ingredients = parent.querySelector('.burgers_ingredients');
-//   const title = parent.querySelector('.burgers_ingredients--title');
-//   if (ingredients && title) {
-//     title.remove();
-//     ingredients.remove();
-//   } else {
-//     const title = createTitle();
-//     const compound = createCompound();
-//     parent.append(title, compound);
-//   }
-// };
-
 const toggleIngredients = (button) => {
   const parent = button.closest('.burgers_list--item');
   const ingredients = parent.querySelector('.burgers_ingredients');

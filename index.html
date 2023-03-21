@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONTS -->
-    <link rel="stylesheet" href="styles/fonts.css">
+    <!-- <link rel="stylesheet" href="styles/fonts.css"> -->
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Burger Factory</title>
@@ -36,12 +36,16 @@
                         </ul>
                     </nav>
                 </div>
-                <div>
-                    <input type="button" class="button_order" value="Order now" />
+                <div class="header_buttons">
+                    <input type="button" class="button_order display_none" value="Order now" />
+                    <button class="header_nav--toggle">
+                        <img class="nav_icon" src="images/nav_icon.png" alt="Logo Burger Factory" />
+                    </button>
                 </div>
             </div>
         </div>
     </header>
+
     <!-- Section Hero -->
     <section class="hero">
         <div class="container">
@@ -61,8 +65,9 @@
             </div>
         </div>
     </section>
+
     <!-- Section ingredients -->
-    <section id="ingredients">
+    <section id="ingredients" class="spacing_blocks">
         <div class="container">
             <div class="ingredients_wrapper">
                 <h2 class="section_title">
@@ -71,7 +76,7 @@
                 <h4 class="section_subtitle ingredients">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     <br />Fusce mollis id arcu vel maximus.
                 </h4>
-                <div class="ingredients_slider">
+                <!-- <div class="ingredients_slider">
                     <ul class="ingredients_list">
                         <li class="ingredients_list--item">
                             <img src="images/icons_ingredients/buns.png" alt="Icon ingredients Buns" />
@@ -94,7 +99,7 @@
                             <span class="ingredients_item--title">Bacon</span>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <p class="section_desc  ingredients">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                     eget consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue, non commodo elit. Integer
                     risus orci, ultricies ac dapibus sed, dignissim interdum quam. Proin quis dignissim diam. Donec id
@@ -104,8 +109,9 @@
             </div>
         </div>
     </section>
+
     <!-- Section Story -->
-    <section id="story">
+    <section id="story" class="spacing_blocks">
         <div class="container">
             <div class="story_wrapper">
                 <div class="story_content">
@@ -127,8 +133,9 @@
             </div>
         </div>
     </section>
+
     <!-- Section Burgers -->
-    <section id="burgers">
+    <section id="burgers" class="spacing_blocks">
         <div class="container">
             <div class="burgers_wrapper">
                 <h2 class="section_title">
@@ -157,8 +164,9 @@
             </div>
         </div>
     </section>
+
     <!-- Section Location -->
-    <section id="location">
+    <section id="location" class="spacing_blocks">
         <div class="container">
             <div class="location_wrapper">
                 <h2 class="section_title">
@@ -184,8 +192,9 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer spacing_blocks">
         <div class="container">
             <div class="footer_wrapper">
                 <img class="logo" src="images/logo.png" alt="Logo Burger Factory" />
@@ -205,6 +214,7 @@
             </div>
         </div>
     </footer>
+    <script src="/js/nav.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/showIngredients.js"></script>
 </body>
