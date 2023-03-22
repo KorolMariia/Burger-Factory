@@ -33,6 +33,9 @@
                             <li class="header_nav--item">
                                 <a class="header_nav--link" href="#location">location</a>
                             </li>
+                            <li class="header_nav--item add">
+                                <input type="button" class="button_order" value="Order now" />
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -67,40 +70,40 @@
     </section>
 
     <!-- Section ingredients -->
-    <section id="ingredients" class="spacing_blocks">
+    <section id="ingredients" class="ingredients spacing_blocks">
         <div class="container">
             <div class="ingredients_wrapper">
                 <h2 class="section_title">
                     Ingredients
                 </h2>
-                <h4 class="section_subtitle ingredients">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h4 class="section_subtitle ingredients_add">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     <br />Fusce mollis id arcu vel maximus.
                 </h4>
                 <!-- <div class="ingredients_slider">
                     <ul class="ingredients_list">
-                        <li class="ingredients_list--item">
+                        <li class="ingredients_item">
                             <img src="images/icons_ingredients/buns.png" alt="Icon ingredients Buns" />
                             <span class="ingredients_item--title">Buns</span>
                         </li>
-                        <li class="ingredients_list--item">
+                        <li class="ingredients_item">
                             <img src="images/icons_ingredients/salad.png" alt="Icon ingredients Salad" />
                             <span class="ingredients_item--title">Salad</span>
                         </li>
-                        <li class="ingredients_list--item">
+                        <li class="ingredients_item">
                             <img src="images/icons_ingredients/tomato.png" alt="Icon ingredients Tomato" />
                             <span class="ingredients_item--title">Tomato</span>
                         </li>
-                        <li class="ingredients_list--item">
+                        <li class="ingredients_item">
                             <img src="images/icons_ingredients/cheese.png" alt="Icon ingredients Cheese" />
                             <span class="ingredients_item--title">Cheese</span>
                         </li>
-                        <li class="ingredients_list--item">
+                        <li class="ingredients_item">
                             <img src="images/icons_ingredients/bacon.png" alt="Icon ingredients Bacon" />
                             <span class="ingredients_item--title">Bacon</span>
                         </li>
                     </ul>
                 </div> -->
-                <p class="section_desc  ingredients">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                <p class="section_desc  ingredients_add">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                     eget consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue, non commodo elit. Integer
                     risus orci, ultricies ac dapibus sed, dignissim interdum quam. Proin quis dignissim diam. Donec id
                     magna placerat, fringilla odio et, efficitur lacus. Vivamus eu ultricies erat, eu lobortis nunc. Sed
@@ -111,7 +114,7 @@
     </section>
 
     <!-- Section Story -->
-    <section id="story" class="spacing_blocks">
+    <section id="story" class="story spacing_blocks">
         <div class="container">
             <div class="story_wrapper">
                 <div class="story_content">
@@ -135,7 +138,7 @@
     </section>
 
     <!-- Section Burgers -->
-    <section id="burgers" class="spacing_blocks">
+    <section id="burgers" class="burgers spacing_blocks">
         <div class="container">
             <div class="burgers_wrapper">
                 <h2 class="section_title">
@@ -166,7 +169,7 @@
     </section>
 
     <!-- Section Location -->
-    <section id="location" class="spacing_blocks">
+    <section id="location" class="location spacing_blocks">
         <div class="container">
             <div class="location_wrapper">
                 <h2 class="section_title">
@@ -185,7 +188,7 @@
                         <a class="phone" href="tel:021 800 00 00">021 800 00 00</a>
                     </li>
                 </ul>
-                <iframe class="map"
+                <iframe class="location_map"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5104.336900450925!2d6.63304!3d46.52415!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c2e31ad9a7581%3A0x6910a4219da53f6!2sPl.%20de%20la%20Riponne%2010%2C%201005%20Lausanne%2C%20Switzerland!5e1!3m2!1sen!2sua!4v1679251221308!5m2!1sen!2sua"
                     pin=' images/burgers_img.png' loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -214,9 +217,30 @@
             </div>
         </div>
     </footer>
+    <button id="scroll-to-top-btn">&#8593</button>
+    <div class="popup">
+        <ul class="popup_list">
+            <li>
+                <a href="tel:021 800 00 00">
+                    <img class="popup_icons" src="images/call_icon.png" alt="Call icon" />
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                    <img class="popup_icons" src="images/telegram_icon.png" alt="Telegram icon" />
+
+                </a>
+            </li>
+            <li class="popup_close">
+                <img src="images/nav_close.svg" alt="Close icon" />
+            </li>
+        </ul>
+    </div>
     <script src="/js/nav.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/showIngredients.js"></script>
+    <script src="/js/buttonToTop.js"></script>
+    <script src="/js/orderNow.js"></script>
 </body>
 
 </html>
