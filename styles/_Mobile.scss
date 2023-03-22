@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 130px;
+    height: 40px;
+  }
+
+  .section_title {
+    font-size: 2em;
+  }
+
+  .hero {
+    &_wrapper {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &_content--title {
+      white-space: normal;
+    }
+  }
+
+  .burgers_list--item img {
+    max-width: 100%;
+  }
+
+  .location_list {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer {
+    &_wrapper {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &_list {
+      text-align: center;
+    }
+  }
+}

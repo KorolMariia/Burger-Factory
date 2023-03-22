@@ -1,7 +1,7 @@
 const navToggle = document.querySelector('.header_nav--toggle');
 const nav = document.querySelector('nav');
 
-navToggle.addEventListener('click', () => {
+navToggle.addEventListener('click', (event) => {
   nav.classList.toggle('show');
 });
 

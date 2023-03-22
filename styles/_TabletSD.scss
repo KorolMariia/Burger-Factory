@@ -1,0 +1,81 @@
+@import 'variables';
+
+@media screen and (max-width: 1023px) {
+  .display_none {
+    display: none;
+  }
+
+  .add {
+    display: block;
+  }
+
+  nav {
+    display: none;
+
+    .show {
+      display: block;
+    }
+
+    .header_nav {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      height: 100%;
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: $primary-color;
+      opacity: 0.9;
+    }
+  }
+
+  .header_buttons {
+    display: flex;
+    gap: 100px;
+
+    .header_nav--toggle {
+      display: block;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: $complementary-color 4px 2px 5px;
+
+      .nav_icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .hero {
+    &_content--title {
+      font-size: 2.5em;
+      line-height: 1;
+    }
+
+    &_content--subtitle {
+      font-size: 1em;
+      line-height: 1;
+    }
+
+    &_button {
+      width: 200px;
+      font-size: 0.7em;
+      line-height: 1;
+      padding: 10px 5px;
+    }
+  }
+
+  .ingredients {
+    padding: 0;
+  }
+
+  .location_list--item {
+    font-size: 1em;
+  }
+}

@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Poppins";
-  src: url("Poppinsblack.woff2") format("woff2"), url("Poppinsblack.woff") format("woff");
+  src: url("../fonts/Poppinsblack.woff2") format("woff2"), url("../fonts/Poppinsblack.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("Poppins-Regular.woff2") format("woff2"), url("Poppins-Regular.woff") format("woff");
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("Poppinsbold.woff2") format("woff2"), url("Poppinsbold.woff") format("woff");
+  src: url("../fonts/Poppinsbold.woff2") format("woff2"), url("../fonts/Poppinsbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -90,7 +90,6 @@ body {
   font: normal 700 18px/27px sans-serif;
   cursor: pointer;
 }
-
 .button_order:hover {
   background-color: #008bf6;
   transition: ease-out, 0.3s;
@@ -361,7 +360,7 @@ body {
   z-index: 100;
   padding: 40px;
   background-color: #fff;
-  opacity: 0.9;
+  border: 1px solid #00b3fa;
 }
 .popup_list {
   display: flex;
@@ -396,7 +395,6 @@ body {
   cursor: pointer;
 }
 
-/* Desktop SD */
 @media screen and (max-width: 1919px) {
   .container {
     padding: 0 10%;
@@ -404,8 +402,10 @@ body {
   .header_wrapper {
     padding: 15px 0;
   }
+  .hero_wrapper {
+    padding-top: 20px;
+  }
 }
-/* Tablet HD */
 @media screen and (max-width: 1439px) {
   .logo {
     width: 130px;
@@ -414,14 +414,14 @@ body {
   .spacing_blocks {
     margin-top: 75px;
   }
+  .text-left {
+    text-align: center;
+  }
   .header_actions {
     gap: 50px;
   }
   .header_nav {
     gap: 30px;
-  }
-  .hero_wrapper {
-    padding-top: 20px;
   }
   .hero_content {
     margin-top: 5%;
@@ -434,33 +434,21 @@ body {
     flex-direction: column;
     text-align: center;
   }
-  .text-left {
-    text-align: center;
-  }
 }
-/* Tablet SD */
 @media screen and (max-width: 1023px) {
-  nav {
-    display: none;
-  }
   .display_none {
     display: none;
   }
   .add {
     display: block;
   }
-  .header_nav--toggle {
-    display: block;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: #00b3fa 4px 2px 5px;
+  nav {
+    display: none;
   }
-  nav.show {
+  nav .show {
     display: block;
   }
-  .header_nav {
+  nav .header_nav {
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -478,7 +466,15 @@ body {
     display: flex;
     gap: 100px;
   }
-  .nav_icon {
+  .header_buttons .header_nav--toggle {
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #00b3fa 4px 2px 5px;
+  }
+  .header_buttons .header_nav--toggle .nav_icon {
     display: block;
     width: 30px;
     height: 30px;
@@ -504,21 +500,20 @@ body {
     font-size: 1em;
   }
 }
-/* Mobile */
 @media screen and (max-width: 767px) {
-  .hero_wrapper {
-    flex-direction: column;
-    gap: 50px;
-  }
-  .hero_content--title {
-    white-space: normal;
-  }
   .logo {
     width: 130px;
     height: 40px;
   }
   .section_title {
     font-size: 2em;
+  }
+  .hero_wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero_content--title {
+    white-space: normal;
   }
   .burgers_list--item img {
     max-width: 100%;

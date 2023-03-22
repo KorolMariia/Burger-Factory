@@ -1,0 +1,40 @@
+@media screen and (max-width: 1439px) {
+  .logo {
+    width: 130px;
+    height: 40px;
+  }
+
+  .spacing_blocks {
+    margin-top: 75px;
+  }
+
+  .text-left {
+    text-align: center;
+  }
+
+  .header {
+    &_actions {
+      gap: 50px;
+    }
+
+    &_nav {
+      gap: 30px;
+    }
+  }
+
+  .hero {
+    &_content {
+      margin-top: 5%;
+    }
+
+    &_content--title {
+      font-size: 3.2em;
+      line-height: 1.2;
+    }
+  }
+
+  .story_wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
